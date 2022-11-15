@@ -14,8 +14,13 @@ export default function Project() {
     return (
         <div className="content">
             <h1>{project.project_name}</h1>
-            <img src={project.project_picture_url} />
-            <p>{project.about}</p>
+            <div className="gridProject">
+                <img
+                    className="mainImageProject"
+                    src={project.project_picture_url}
+                />
+                <p className="about">{project.about}</p>
+            </div>
             {/* <p>{project.more_pictures}</p> */}
             {/*             <ul>
                 {project.more_pictures.map((url) => (

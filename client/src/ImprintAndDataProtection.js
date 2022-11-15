@@ -102,7 +102,7 @@ export default function ImprintAndDataProtection() {
                 werden wir derartige Inhalte unverzüglich entfernen.
             </p>
             <p className="marginTopBig">
-                Dieses Impressum wurde von
+                Dieses Impressum wurde von{" "}
                 <a href="https://jurarat.de/">jurarat.de</a> zur Verfügung
                 gestellt.
             </p>

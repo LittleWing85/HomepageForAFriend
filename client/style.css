@@ -37,7 +37,7 @@ p {
     flex-wrap: wrap;
 }
 .content {
-    margin: 2rem 50% 2rem 2rem;
+    margin: 2rem 40% 2rem 2rem;
 }
 
 /* Rulesets for header*/
@@ -102,4 +102,20 @@ p {
 }
 .portfolioProjectOverlay:hover {
     z-index: 15;
+}
+
+/* Rulesets for project*/
+.gridProject {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 100%;
+}
+.mainImageProject {
+    margin: 1rem 2rem 2rem 0;
+    max-width: 100%;
+}
+.about {
+    margin: 1rem 2rem 2rem 2rem;
+    line-height: 1.3rem;
+    text-align: left;
 }
