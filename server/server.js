@@ -13,9 +13,9 @@ app.get("/api/allProjects", async (request, response) => {
     response.json(allProjects);
 });
 app.get("/api/project/:id", (request, response) => {
-    getProjectDataById(request.params.id).then((result) =>
-        response.json(result)
-    );
+    getProjectDataById(request.params.id)
+        .then((result) => response.json(result))
+        .then((data) => console.log(data));
 });
 
 app.get("*", function (req, res) {

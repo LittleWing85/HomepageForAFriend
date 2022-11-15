@@ -7,9 +7,7 @@ export default function Portfolio() {
     useEffect(() => {
         fetch("/api/allProjects")
             .then((response) => response.json())
-            .then((data) => {
-                setAllProjects(data);
-            });
+            .then((data) => setAllProjects(data));
     }, []);
 
     return (

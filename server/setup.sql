@@ -12,25 +12,43 @@ CREATE TABLE projects (
 
 
 INSERT INTO projects(project_name, project_picture_url, about)
-VALUES ('ASTEROID', '/media/Asteroid.png', 'Du siehst hier voll das geile Projekt von Alex Wittchen. Viel Spaß beim Anschauen! Mit ihm werden auch deine Projekte richtig gut!');
+VALUES ('ASTEROID', '/media/Asteroid.png', 
+'Du siehst hier voll das geile Projekt von Alex Wittchen. Viel Spaß beim Anschauen! Mit ihm werden deine Projekte richtig toll!');
+
 INSERT INTO projects(project_name, project_picture_url, about, more_pictures)
-VALUES ('EYEWEAR', '/media/Eyewear/BrilleParametrisch.png', 
-'Du siehst hier voll das geile Projekt von Alex Wittchen. Viel Spaß beim Anschauen! Mit ihm werden auch deine Projekte richtig gut!', 
-ARRAY [TEXT '/media/Eyewear/BrilleParametrisch.png', TEXT '/media/Eyewear/Oakleys1.jpg']);
+VALUES ('EYEWEAR', '/media/Eyewear/BrilleParam.png', 
+'Du siehst hier voll das geile Projekt von Alex Wittchen. Viel Spaß beim Anschauen! Mit ihm werden deine Projekte richtig toll!',
+ARRAY [TEXT '/media/Burger.jpg', TEXT '/media/Herz.png']);
+
 INSERT INTO projects(project_name, project_picture_url, about)
-VALUES ('BURGER', '/media/Burger.jpg', 'Du siehst hier voll das geile Projekt von Alex Wittchen. Viel Spaß beim Anschauen! Mit ihm werden auch deine Projekte richtig gut!');
+VALUES ('BURGER', '/media/Burger.jpg', 
+'Du siehst hier voll das geile Projekt von Alex Wittchen. Viel Spaß beim Anschauen! Mit ihm werden deine Projekte richtig toll!');
 INSERT INTO projects(project_name, project_picture_url, about)
-VALUES ('HERZ', '/media/Herz.png', 'Du siehst hier voll das geile Projekt von Alex Wittchen. Viel Spaß beim Anschauen! Mit ihm werden auch deine Projekte richtig gut!');
+
+VALUES ('HERZ', '/media/Herz.png', 
+'Du siehst hier voll das geile Projekt von Alex Wittchen. Viel Spaß beim Anschauen! Mit ihm werden deine Projekte richtig toll!');
+
 INSERT INTO projects(project_name, project_picture_url, about)
-VALUES ('ISS', '/media/ISS1.png', 'Du siehst hier voll das geile Projekt von Alex Wittchen. Viel Spaß beim Anschauen! Mit ihm werden auch deine Projekte richtig gut!');
+VALUES ('ISS', '/media/ISS1.png', 
+'Du siehst hier voll das geile Projekt von Alex Wittchen. Viel Spaß beim Anschauen! Mit ihm werden deine Projekte richtig toll!');
+
 INSERT INTO projects(project_name, project_picture_url, about)
-VALUES ('GNÄRZLA', '/media/PP_Gnärzla1.JPG', 'Du siehst hier voll das geile Projekt von Alex Wittchen. Viel Spaß beim Anschauen! Mit ihm werden auch deine Projekte richtig gut!');
+VALUES ('GNÄRZLA', '/media/PP_Gnärzla1.JPG', 
+'Du siehst hier voll das geile Projekt von Alex Wittchen. Viel Spaß beim Anschauen! Mit ihm werden deine Projekte richtig toll!');
+
 INSERT INTO projects(project_name, project_picture_url, about)
-VALUES ('SCHUH', '/media/Schuh.JPG', 'Du siehst hier voll das geile Projekt von Alex Wittchen. Viel Spaß beim Anschauen! Mit ihm werden auch deine Projekte richtig gut!');
+VALUES ('SCHUH', '/media/Schuh.JPG', 
+'Du siehst hier voll das geile Projekt von Alex Wittchen. Viel Spaß beim Anschauen! Mit ihm werden deine Projekte richtig toll!');
+
 INSERT INTO projects(project_name, project_picture_url, about)
-VALUES ('TESTGIF', '/media/Testgif.gif', 'Du siehst hier voll das geile Projekt von Alex Wittchen. Viel Spaß beim Anschauen! Mit ihm werden auch deine Projekte richtig gut!');
+VALUES ('TESTGIF', '/media/Testgif.gif', 
+'Du siehst hier voll das geile Projekt von Alex Wittchen. Viel Spaß beim Anschauen! Mit ihm werden deine Projekte richtig toll!');
+
 INSERT INTO projects(project_name, project_picture_url, about)
-VALUES ('WASCHBECKEN', '/media/Waschbecken1.png', 'Du siehst hier voll das geile Projekt von Alex Wittchen. Viel Spaß beim Anschauen! Mit ihm werden auch deine Projekte richtig gut!');
+VALUES ('WASCHBECKEN', '/media/Waschbecken1.png', 
+'Du siehst hier voll das geile Projekt von Alex Wittchen. Viel Spaß beim Anschauen! Mit ihm werden deine Projekte richtig toll!');
+
 INSERT INTO projects(project_name, project_picture_url, about)
-VALUES ('WINDOW', '/media/Window1.png', 'Du siehst hier voll das geile Projekt von Alex Wittchen. Viel Spaß beim Anschauen! Mit ihm werden auch deine Projekte richtig gut!');
+VALUES ('WINDOW', '/media/Window1.png', 
+'Du siehst hier voll das geile Projekt von Alex Wittchen. Viel Spaß beim Anschauen! Mit ihm werden deine Projekte richtig toll!');
 
