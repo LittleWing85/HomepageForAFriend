@@ -3,7 +3,7 @@ const app = express();
 const compression = require("compression");
 const path = require("path");
 const { getAllProjects, getProjectDataById } = require("./db");
-/* Test */
+
 app.use(compression());
 
 app.use(express.static(path.join(__dirname, "..", "client", "public")));
