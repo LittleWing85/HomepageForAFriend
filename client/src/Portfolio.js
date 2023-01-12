@@ -12,21 +12,21 @@ export default function Portfolio() {
 
     return (
         <ul>
-            <div className="portfolioGrid">
+            <div>
                 {allProjects.map((project) => (
                     <li className="noListStyle" key={project.id}>
-                        <Link to={"/Projekt/" + project.id}>
-                            <div className="portfolioProjectOverlay">
-                                <p className="portfolioProjectData">
-                                    {project.project_name}
-                                </p>
+                        <div className="box">
+                            <div className="boxInner">
+                                <img src={project.project_picture_url} />
                             </div>
-                        </Link>
-
-                        <img
-                            className="portfolioImage"
-                            src={project.project_picture_url}
-                        />
+                            <Link to={"/Projekt/" + project.id}>
+                                <div className="portfolioProjectOverlay">
+                                    <p className="portfolioProjectData">
+                                        {project.project_name}
+                                    </p>
+                                </div>
+                            </Link>
+                        </div>
                     </li>
                 ))}
             </div>
