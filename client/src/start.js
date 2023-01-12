@@ -12,7 +12,7 @@ function MainLayout() {
         <BrowserRouter>
             <header className="flexHeaderElements">
                 <NavLink to="/" exact>
-                    <img className="logo" src="/media/Burger.jpg"></img>
+                    <img className="logo" src="/media/Eichhörnchen4.JPG"></img>
                 </NavLink>
                 <nav className="flexWrapHorizontally">
                     <NavLink className="navEntry" to="/" exact>

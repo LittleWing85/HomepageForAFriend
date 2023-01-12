@@ -4,4 +4,5 @@ secrets.json
 client/public/bundle.js
 client/public/bundle.js.LICENSE.txt
 bundle.css
-client/public/media
+client/public/media/gitIgnore
+setupGitIgnore.sql

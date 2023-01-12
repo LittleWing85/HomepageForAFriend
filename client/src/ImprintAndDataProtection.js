@@ -3,17 +3,10 @@ export default function ImprintAndDataProtection() {
         <div className="content">
             <p className="bold">IMPRESSUM</p>
             <p className="marginTopBig bold">Angaben gem. § 5 TMG:</p>
-            <p className="marginTop">Alex Wittchen</p>
-            <p>STRASSE & HAUSNUMMER</p>
-            <p>PLZ & ORT</p>
-            <p className="marginTopSmall">
-                <a href="mailto:alex@protobird3d.com">alex@protobird3d.com</a>
-            </p>
-            <p>+49 (0) 172 1366565</p>
             <p className="marginTop">
-                Umsatzsteuer-Identifikationsnummer gem. § 27 a
-                Umsatzsteuergesetz: DE XXX XXX XXX
+                <i>Inhalt folgt!</i>
             </p>
+
             <p className="marginTopVeryBig bold">
                 HAFTUNGSAUSSCHLUSS &#8211; DISCLAIMER
             </p>

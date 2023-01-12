@@ -12,73 +12,55 @@ CREATE TABLE projects (
 
 
 INSERT INTO projects(project_name, project_picture_url, about)
-VALUES ('ASTEROID', '/media/Asteroid.png', 
-'Du siehst hier voll das geile Projekt von Alex Wittchen. Viel Spaß beim Anschauen! Mit ihm werden deine Projekte richtig toll!
-Du siehst hier voll das geile Projekt von Alex Wittchen. Viel Spaß beim Anschauen! Mit ihm werden deine Projekte richtig toll!
-Du siehst hier voll das geile Projekt von Alex Wittchen. Viel Spaß beim Anschauen! Mit ihm werden deine Projekte richtig toll!
-Du siehst hier voll das geile Projekt von Alex Wittchen. Viel Spaß beim Anschauen! Mit ihm werden deine Projekte richtig toll!');
+VALUES ('Marie, das Damwildbaby', '/media/Andere1.JPG', 
+'Tatsächlich handelt es sich hier um ein Hirschbaby!');
 
-INSERT INTO projects(project_name, project_picture_url, about, more_pictures)
-VALUES ('EYEWEAR', '/media/Eyewear/BrilleParam.png', 
-'Du siehst hier voll das geile Projekt von Alex Wittchen. Viel Spaß beim Anschauen! Mit ihm werden deine Projekte richtig toll!
-Du siehst hier voll das geile Projekt von Alex Wittchen. Viel Spaß beim Anschauen! Mit ihm werden deine Projekte richtig toll!
-Du siehst hier voll das geile Projekt von Alex Wittchen. Viel Spaß beim Anschauen! Mit ihm werden deine Projekte richtig toll!
-Du siehst hier voll das geile Projekt von Alex Wittchen. Viel Spaß beim Anschauen! Mit ihm werden deine Projekte richtig toll!',
-ARRAY [TEXT '/media/Burger.jpg', TEXT '/media/Herz.png']);
 
 INSERT INTO projects(project_name, project_picture_url, about)
-VALUES ('BURGER', '/media/Burger.jpg', 
-'Du siehst hier voll das geile Projekt von Alex Wittchen. Viel Spaß beim Anschauen! Mit ihm werden deine Projekte richtig toll!
-Du siehst hier voll das geile Projekt von Alex Wittchen. Viel Spaß beim Anschauen! Mit ihm werden deine Projekte richtig toll!
-Du siehst hier voll das geile Projekt von Alex Wittchen. Viel Spaß beim Anschauen! Mit ihm werden deine Projekte richtig toll!
-Du siehst hier voll das geile Projekt von Alex Wittchen. Viel Spaß beim Anschauen! Mit ihm werden deine Projekte richtig toll!');
-INSERT INTO projects(project_name, project_picture_url, about)
-
-VALUES ('HERZ', '/media/Herz.png', 
-'Du siehst hier voll das geile Projekt von Alex Wittchen. Viel Spaß beim Anschauen! Mit ihm werden deine Projekte richtig toll!
-Du siehst hier voll das geile Projekt von Alex Wittchen. Viel Spaß beim Anschauen! Mit ihm werden deine Projekte richtig toll!
-Du siehst hier voll das geile Projekt von Alex Wittchen. Viel Spaß beim Anschauen! Mit ihm werden deine Projekte richtig toll!
-Du siehst hier voll das geile Projekt von Alex Wittchen. Viel Spaß beim Anschauen! Mit ihm werden deine Projekte richtig toll!');
+VALUES ('Kleines Eichhörnchenbaby', '/media/Eichhörnchen5.jpg', 
+'Sehr junges Eichhörnchenbaby, nur wenige Tage alt.');
 
 INSERT INTO projects(project_name, project_picture_url, about)
-VALUES ('ISS', '/media/ISS1.png', 
-'Du siehst hier voll das geile Projekt von Alex Wittchen. Viel Spaß beim Anschauen! Mit ihm werden deine Projekte richtig toll!
-Du siehst hier voll das geile Projekt von Alex Wittchen. Viel Spaß beim Anschauen! Mit ihm werden deine Projekte richtig toll!
-Du siehst hier voll das geile Projekt von Alex Wittchen. Viel Spaß beim Anschauen! Mit ihm werden deine Projekte richtig toll!
-Du siehst hier voll das geile Projekt von Alex Wittchen. Viel Spaß beim Anschauen! Mit ihm werden deine Projekte richtig toll!');
+VALUES ('Zutraulicher Waschbär', '/media/Waschbär1.JPG', 
+'Flaschenkinder vergessen ihre Zieheltern niemals :-)');
 
 INSERT INTO projects(project_name, project_picture_url, about)
-VALUES ('GNÄRZLA', '/media/PP_Gnärzla1.JPG', 
-'Du siehst hier voll das geile Projekt von Alex Wittchen. Viel Spaß beim Anschauen! Mit ihm werden deine Projekte richtig toll!
-Du siehst hier voll das geile Projekt von Alex Wittchen. Viel Spaß beim Anschauen! Mit ihm werden deine Projekte richtig toll!
-Du siehst hier voll das geile Projekt von Alex Wittchen. Viel Spaß beim Anschauen! Mit ihm werden deine Projekte richtig toll!
-Du siehst hier voll das geile Projekt von Alex Wittchen. Viel Spaß beim Anschauen! Mit ihm werden deine Projekte richtig toll!');
+VALUES ('Eichhörnchen beim Trinken auf dem Rücken', '/media/Eichhörnchen1.JPG', 
+'Die Rückenlage beim Trinken sollte vermieden werden - außer in Ausnahmefällen, wenn das Tier z.B. ausschließlich in dieser Position trinkt.');
 
 INSERT INTO projects(project_name, project_picture_url, about)
-VALUES ('SCHUH', '/media/Schuh.JPG', 
-'Du siehst hier voll das geile Projekt von Alex Wittchen. Viel Spaß beim Anschauen! Mit ihm werden deine Projekte richtig toll!
-Du siehst hier voll das geile Projekt von Alex Wittchen. Viel Spaß beim Anschauen! Mit ihm werden deine Projekte richtig toll!
-Du siehst hier voll das geile Projekt von Alex Wittchen. Viel Spaß beim Anschauen! Mit ihm werden deine Projekte richtig toll!
-Du siehst hier voll das geile Projekt von Alex Wittchen. Viel Spaß beim Anschauen! Mit ihm werden deine Projekte richtig toll!');
+VALUES ('Rehkitz', '/media/Andere2.JPG', 
+'Ist das Rehkitz nicht süß?');
 
 INSERT INTO projects(project_name, project_picture_url, about)
-VALUES ('TESTGIF', '/media/Testgif.gif', 
-'Du siehst hier voll das geile Projekt von Alex Wittchen. Viel Spaß beim Anschauen! Mit ihm werden deine Projekte richtig toll!
-Du siehst hier voll das geile Projekt von Alex Wittchen. Viel Spaß beim Anschauen! Mit ihm werden deine Projekte richtig toll!
-Du siehst hier voll das geile Projekt von Alex Wittchen. Viel Spaß beim Anschauen! Mit ihm werden deine Projekte richtig toll!
-Du siehst hier voll das geile Projekt von Alex Wittchen. Viel Spaß beim Anschauen! Mit ihm werden deine Projekte richtig toll!');
+VALUES ('Eichhörnchen greift beim Trinken', '/media/Eichhörnchen2.JPG', 
+'Viele Eichhörnchen halten die Flasche beim Trinken fest.');
 
 INSERT INTO projects(project_name, project_picture_url, about)
-VALUES ('WASCHBECKEN', '/media/Waschbecken1.png', 
-'Du siehst hier voll das geile Projekt von Alex Wittchen. Viel Spaß beim Anschauen! Mit ihm werden deine Projekte richtig toll!
-Du siehst hier voll das geile Projekt von Alex Wittchen. Viel Spaß beim Anschauen! Mit ihm werden deine Projekte richtig toll!
-Du siehst hier voll das geile Projekt von Alex Wittchen. Viel Spaß beim Anschauen! Mit ihm werden deine Projekte richtig toll!
-Du siehst hier voll das geile Projekt von Alex Wittchen. Viel Spaß beim Anschauen! Mit ihm werden deine Projekte richtig toll!');
+VALUES ('Eichhörnchen beim Trinken', '/media/Eichhörnchen3.JPG' , 
+'Jedes Eichhörnchen trinkt ein bisschen anders.');
 
 INSERT INTO projects(project_name, project_picture_url, about)
-VALUES ('WINDOW', '/media/Window1.png', 
-'Du siehst hier voll das geile Projekt von Alex Wittchen. Viel Spaß beim Anschauen! Mit ihm werden deine Projekte richtig toll!
-Du siehst hier voll das geile Projekt von Alex Wittchen. Viel Spaß beim Anschauen! Mit ihm werden deine Projekte richtig toll!
-Du siehst hier voll das geile Projekt von Alex Wittchen. Viel Spaß beim Anschauen! Mit ihm werden deine Projekte richtig toll!
-Du siehst hier voll das geile Projekt von Alex Wittchen. Viel Spaß beim Anschauen! Mit ihm werden deine Projekte richtig toll!');
+VALUES ('Fred & Frieda 1', '/media/Waschbär3.jpg', 
+'Waschbären klettern und turnen gerne auf ihren Zieheltern herum.');
+
+INSERT INTO projects(project_name, project_picture_url, about)
+VALUES ('Fred & Frieda 2', '/media/Waschbär4.jpg', 
+'Hier übt Frieda schon Mal, an Bäumen zu klettern.');
+
+INSERT INTO projects(project_name, project_picture_url, about)
+VALUES ('Fred & Frieda 3', '/media/Waschbär5.jpg', 
+'Waschbären sind unheimlich neugierig!');
+
+INSERT INTO projects(project_name, project_picture_url, about)
+VALUES ('Fred & Frieda 4', '/media/Waschbär6.jpg', 
+'Das kitzelt ganz schön :-)');
+
+INSERT INTO projects(project_name, project_picture_url, about)
+VALUES ('Eichhörnchen in der Tasse', '/media/Eichhörnchen4.JPG', 
+'Nanu? Eigentlich wollte ich ja einen Kaffee trinken...');
+
+INSERT INTO projects(project_name, project_picture_url, about)
+VALUES ('Eichhörnchen schläft', '/media/Eichhörnchen6.jpg', 
+'Eichhörnchenkinder machen es sich gerne bei ihren Zieheltern gemütlich.');
 
