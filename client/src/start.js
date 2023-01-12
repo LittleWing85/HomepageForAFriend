@@ -3,6 +3,7 @@ import { NavLink, Route, BrowserRouter } from "react-router-dom";
 import Portfolio from "./Portfolio.js";
 import Contact from "./Contact.js";
 import ImprintAndDataProtection from "./ImprintAndDataProtection.js";
+import Test from "./Test.js";
 import Project from "./Project.js";
 
 ReactDOM.render(<MainLayout />, document.querySelector("main"));
@@ -18,6 +19,9 @@ function MainLayout() {
                     <NavLink className="navEntry" to="/" exact>
                         PORTFOLIO
                     </NavLink>
+                    <NavLink className="navEntry" to="/Test">
+                        EXPERIMENT FOR PORTFOLIO
+                    </NavLink>
                     <NavLink className="navEntry" to="/Kontakt">
                         KONTAKT
                     </NavLink>
@@ -29,6 +33,9 @@ function MainLayout() {
 
             <Route path="/" exact>
                 <Portfolio />
+            </Route>
+            <Route path="/Test">
+                <Test />
             </Route>
             <Route path="/Kontakt">
                 <Contact />
