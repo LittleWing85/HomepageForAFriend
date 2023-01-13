@@ -11,25 +11,19 @@ export default function Portfolio() {
     }, []);
 
     return (
-        <ul>
-            <div>
-                {allProjects.map((project) => (
-                    <li className="noListStyle" key={project.id}>
-                        <div className="box">
-                            <div className="boxInner">
-                                <img src={project.project_picture_url} />
-                            </div>
-                            <Link to={"/Projekt/" + project.id}>
-                                <div className="portfolioProjectOverlay">
-                                    <p className="portfolioProjectData">
-                                        {project.project_name}
-                                    </p>
-                                </div>
-                            </Link>
+        <ul className="wrapper">
+            {allProjects.map((project) => (
+                <li className="noListStyle portfolioCard" key={project.id}>
+                    <Link to={"/Projekt/" + project.id}>
+                        <div className="portfolioProjectOverlay">
+                            <p className="portfolioProjectData">
+                                {project.project_name}
+                            </p>
                         </div>
-                    </li>
-                ))}
-            </div>
+                    </Link>
+                    <img src={project.project_picture_url} />
+                </li>
+            ))}
         </ul>
     );
 }

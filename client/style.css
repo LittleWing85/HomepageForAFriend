@@ -64,46 +64,41 @@ p {
 }
 
 /* Rulesets for portfolio*/
-
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
 .noListStyle {
     list-style-type: none;
 }
-.box {
-    float: left;
-    position: relative;
+.portfolioCard {
     width: 33.33%;
-    padding-bottom: 33.33%;
+    height: 33.33%;
+    position: relative;
 }
-.boxInner {
-    position: absolute;
-    height: 100%;
-    z-index: 10;
-}
-.boxInner:hover {
-    z-index: 0;
-}
-.boxInner img {
+.portfolioCard img {
     width: 100%;
-}
-.portfolioProjectOverlay,
-.portfolioProjectData {
-    position: absolute;
-    z-index: 5;
+    z-index: 10;
+    float: left;
 }
 .portfolioProjectOverlay {
+    position: absolute;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 5;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
     background-color: rgba(0, 0, 0, 0.6);
+}
+.portfolioProjectOverlay:hover {
+    opacity: 1;
 }
 .portfolioProjectData {
     background-color: rgba(0, 0, 0, 0);
     color: white;
-}
-.portfolioProjectOverlay:hover {
-    z-index: 15;
 }
 
 /* Rulesets for view of single project*/
