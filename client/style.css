@@ -5,7 +5,6 @@
     margin: 0;
     padding: 0;
 }
-
 h1 {
     font-size: 20pt;
     margin-top: 2rem;
@@ -31,7 +30,6 @@ p {
 .bold {
     font-weight: bold;
 }
-
 .flexWrapHorizontally {
     display: flex;
     flex-wrap: wrap;
@@ -117,7 +115,6 @@ p {
 }
 
 /* Media Queries */
-
 @media screen and (max-width: 720px) {
     .portfolioCard {
         width: 100%;

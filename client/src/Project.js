@@ -1,12 +1,13 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router";
 
-export default function Project() {
+export default function Project(props) {
+    const projectId = props.projectId;
     const { id } = useParams();
     const [project, setProject] = useState({});
 
     useEffect(() => {
-        fetch("/api/project/" + id)
+        fetch("/api/project/" + projectId)
             .then((response) => response.json())
             .then((data) => setProject(data));
     }, [id]);

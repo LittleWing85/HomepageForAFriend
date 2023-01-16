@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import Project from "./Project";
 
 export default function Portfolio() {
     const [allProjects, setAllProjects] = useState([]);
+    const [projectSelected, setProjectSelected] = useState(false);
+    const [selectedProjectId, setSelectedProjectId] = useState(0);
 
     useEffect(() => {
         fetch("/api/allProjects")
@@ -10,20 +12,26 @@ export default function Portfolio() {
             .then((data) => setAllProjects(data));
     }, []);
 
+    function displayProjectInfo(projectId) {
+        setProjectSelected(true);
+        setSelectedProjectId(projectId);
+    }
+
     return (
-        <ul className="wrapper">
-            {allProjects.map((project) => (
-                <li className="noListStyle portfolioCard" key={project.id}>
-                    <Link to={"/Projekt/" + project.id}>
-                        <div className="portfolioProjectOverlay">
-                            <p className="portfolioProjectData">
-                                {project.project_name}
-                            </p>
-                        </div>
-                    </Link>
-                    <img src={project.project_picture_url} />
-                </li>
-            ))}
-        </ul>
+        <div>
+            {projectSelected && <Project projectId={selectedProjectId} />}
+            <ul className="wrapper">
+                {allProjects.map((project) => (
+                    <li
+                        className="noListStyle portfolioCard"
+                        name={"Hello"}
+                        key={project.id}
+                        onClick={() => displayProjectInfo(project.id)}
+                    >
+                        <img src={project.project_picture_url} />
+                    </li>
+                ))}
+            </ul>
+        </div>
     );
 }
