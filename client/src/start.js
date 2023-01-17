@@ -1,11 +1,18 @@
 import ReactDOM from "react-dom";
 import { NavLink, Route, BrowserRouter } from "react-router-dom";
+import { Provider } from "react-redux";
+import { store } from "./store.js";
 import Portfolio from "./Portfolio.js";
 import Contact from "./Contact.js";
 import ImprintAndDataProtection from "./ImprintAndDataProtection.js";
-import Project from "./Project.js";
+import PortfolioWithRedux from "./PortfolioWithRedux.js";
 
-ReactDOM.render(<MainLayout />, document.querySelector("main"));
+ReactDOM.render(
+    <Provider store={store}>
+        <MainLayout />
+    </Provider>,
+    document.querySelector("main")
+);
 
 function MainLayout() {
     return (
@@ -17,6 +24,9 @@ function MainLayout() {
                 <nav className="flexWrapHorizontally">
                     <NavLink className="navEntry" to="/" exact>
                         PORTFOLIO
+                    </NavLink>
+                    <NavLink className="navEntry" to="/test" exact>
+                        PORTFOLIO with redux
                     </NavLink>
                     <NavLink className="navEntry" to="/Kontakt">
                         KONTAKT
@@ -30,14 +40,14 @@ function MainLayout() {
             <Route path="/" exact>
                 <Portfolio />
             </Route>
+            <Route path="/test">
+                <PortfolioWithRedux />
+            </Route>
             <Route path="/Kontakt">
                 <Contact />
             </Route>
             <Route path="/Impressum">
                 <ImprintAndDataProtection />
-            </Route>
-            <Route path="/Projekt/:id">
-                <Project />
             </Route>
         </BrowserRouter>
     );

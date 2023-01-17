@@ -41,18 +41,6 @@ VALUES ('Eichhörnchen beim Trinken', '/media/Eichhörnchen3.JPG' ,
 'Jedes Eichhörnchen trinkt ein bisschen anders.');
 
 INSERT INTO projects(project_name, project_picture_url, about)
-VALUES ('Fred & Frieda 1', '/media/Waschbär3.jpg', 
-'Waschbären klettern und turnen gerne auf ihren Zieheltern herum.');
-
-INSERT INTO projects(project_name, project_picture_url, about)
-VALUES ('Fred & Frieda 2', '/media/Waschbär4.jpg', 
-'Hier übt Frieda schon Mal, an Bäumen zu klettern.');
-
-INSERT INTO projects(project_name, project_picture_url, about)
-VALUES ('Fred & Frieda 3', '/media/Waschbär5.jpg', 
-'Waschbären sind unheimlich neugierig!');
-
-INSERT INTO projects(project_name, project_picture_url, about)
 VALUES ('Fred & Frieda 4', '/media/Waschbär6.jpg', 
 'Das kitzelt ganz schön :-)');
 
