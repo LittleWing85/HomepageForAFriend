@@ -29,6 +29,11 @@ export default function Portfolio() {
                         key={project.id}
                         onClick={() => displayProjectInfo(project.id)}
                     >
+                        <div className="portfolioProjectOverlay">
+                            <p className="portfolioProjectData">
+                                {project.project_name}
+                            </p>
+                        </div>
                         <img src={project.project_picture_url} />
                     </li>
                 ))}
