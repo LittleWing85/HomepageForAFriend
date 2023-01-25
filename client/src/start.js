@@ -2,9 +2,9 @@ import ReactDOM from "react-dom";
 import { NavLink, Route, BrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 import { store } from "./store.js";
-import Portfolio from "./Portfolio.js";
-import Contact from "./Contact.js";
-import ImprintAndDataProtection from "./ImprintAndDataProtection.js";
+import Portfolio from "./modules/portfolio/Portfolio.js";
+import Contact from "./modules/Contact.js";
+import ImprintAndDataProtection from "./modules/ImprintAndDataProtection.js";
 
 ReactDOM.render(
     <Provider store={store}>

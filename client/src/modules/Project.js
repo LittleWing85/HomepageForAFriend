@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { showProjectChanged } from "./portfolio/portfolioSlice";
 
 export default function Project() {
+    const dispatch = useDispatch();
     const projectId = useSelector((state) => state.portfolio.projectId);
     const [project, setProject] = useState({});
 
@@ -11,8 +13,16 @@ export default function Project() {
             .then((data) => setProject(data));
     }, [projectId]);
 
+    function closeProject() {
+        dispatch(showProjectChanged(false));
+    }
+
     return (
         <div className="content">
+            <div className="closingButtonContainer" onClick={closeProject}>
+                <p>&#10799;</p>
+            </div>
+
             <h1>{project.project_name}</h1>
             <div className="gridProject">
                 <img

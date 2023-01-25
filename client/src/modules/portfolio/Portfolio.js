@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
-import { useDispatch } from "react-redux";
-import Project from "./Project.js";
-import { selectedProjectIdChanged } from "./portfolioSlice.js";
+import { useDispatch, useSelector } from "react-redux";
+import Project from "../Project.js";
+import { selectedProjectIdChanged, showProjectChanged } from "./portfolioSlice";
 
 export default function PortfolioWithRedux() {
-    const [allProjects, setAllProjects] = useState([]);
-    const [projectSelected, setProjectSelected] = useState(false);
     const dispatch = useDispatch();
+    const [allProjects, setAllProjects] = useState([]);
+    const showProject = useSelector((state) => state.portfolio.showProject);
 
     useEffect(() => {
         fetch("/api/allProjects")
@@ -15,7 +15,7 @@ export default function PortfolioWithRedux() {
     }, []);
 
     function displayProjectInfo(projectId) {
-        setProjectSelected(true);
+        dispatch(showProjectChanged(true));
         dispatch(selectedProjectIdChanged({ projectId }));
         window.scrollTo({
             top: 0,
@@ -25,7 +25,7 @@ export default function PortfolioWithRedux() {
 
     return (
         <div>
-            {projectSelected && <Project />}
+            {showProject && <Project />}
             <ul className="wrapper">
                 {allProjects.map((project) => (
                     <li
