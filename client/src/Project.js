@@ -1,16 +1,15 @@
 import { useState, useEffect } from "react";
-import { useParams } from "react-router";
+import { useSelector } from "react-redux";
 
-export default function Project(props) {
-    const projectId = props.projectId;
-    const { id } = useParams();
+export default function Project() {
+    const projectId = useSelector((state) => state.portfolio.projectId);
     const [project, setProject] = useState({});
 
     useEffect(() => {
         fetch("/api/project/" + projectId)
             .then((response) => response.json())
             .then((data) => setProject(data));
-    }, [id]);
+    }, [projectId]);
 
     return (
         <div className="content">

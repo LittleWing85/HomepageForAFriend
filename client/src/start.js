@@ -5,7 +5,6 @@ import { store } from "./store.js";
 import Portfolio from "./Portfolio.js";
 import Contact from "./Contact.js";
 import ImprintAndDataProtection from "./ImprintAndDataProtection.js";
-import PortfolioWithRedux from "./PortfolioWithRedux.js";
 
 ReactDOM.render(
     <Provider store={store}>
@@ -25,9 +24,6 @@ function MainLayout() {
                     <NavLink className="navEntry" to="/" exact>
                         PORTFOLIO
                     </NavLink>
-                    <NavLink className="navEntry" to="/test" exact>
-                        PORTFOLIO with redux
-                    </NavLink>
                     <NavLink className="navEntry" to="/Kontakt">
                         KONTAKT
                     </NavLink>
@@ -39,9 +35,6 @@ function MainLayout() {
 
             <Route path="/" exact>
                 <Portfolio />
-            </Route>
-            <Route path="/test">
-                <PortfolioWithRedux />
             </Route>
             <Route path="/Kontakt">
                 <Contact />
