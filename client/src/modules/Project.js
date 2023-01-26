@@ -20,10 +20,9 @@ export default function Project() {
     return (
         <div className="content">
             <div className="closingButtonContainer" onClick={closeProject}>
-                <p>&#10799;</p>
+                <p className="closingButton">&#10799;</p>
             </div>
-
-            <h1>{project.project_name}</h1>
+            <h1>{project.project_name}</h1>{" "}
             <div className="gridProject">
                 <img
                     className="mainImageProject"

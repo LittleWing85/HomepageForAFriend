@@ -12,43 +12,39 @@ CREATE TABLE projects (
 
 
 INSERT INTO projects(project_name, project_picture_url, about)
-VALUES ('Marie, das Damwildbaby', '/media/Andere1.JPG', 
+VALUES ('Marie, das Damwildbaby', '/media/Andere1/Andere1.JPG', 
 'Tatsächlich handelt es sich hier um ein Hirschbaby!');
 
 
 INSERT INTO projects(project_name, project_picture_url, about)
-VALUES ('Kleines Eichhörnchenbaby', '/media/Eichhörnchen5.jpg', 
-'Sehr junges Eichhörnchenbaby, nur wenige Tage alt.');
-
-INSERT INTO projects(project_name, project_picture_url, about)
-VALUES ('Zutraulicher Waschbär', '/media/Waschbär1.JPG', 
+VALUES ('Zutraulicher Waschbär', '/media/Waschbär1/Waschbär1.JPG', 
 'Flaschenkinder vergessen ihre Zieheltern niemals :-)');
 
 INSERT INTO projects(project_name, project_picture_url, about)
-VALUES ('Eichhörnchen beim Trinken auf dem Rücken', '/media/Eichhörnchen1.JPG', 
+VALUES ('Süßer Waschbär', '/media/Waschbär2/Waschbär2.JPG', 
+'Waschbärenkinder lieben es, zu turnen!');
+
+INSERT INTO projects(project_name, project_picture_url, about)
+VALUES ('Eichhörnchen beim Trinken auf dem Rücken', '/media/Eichhörnchen1/Eichhörnchen1.JPG', 
 'Die Rückenlage beim Trinken sollte vermieden werden - außer in Ausnahmefällen, wenn das Tier z.B. ausschließlich in dieser Position trinkt.');
 
 INSERT INTO projects(project_name, project_picture_url, about)
-VALUES ('Rehkitz', '/media/Andere2.JPG', 
+VALUES ('Rehkitz', '/media/Andere2/Andere2.JPG', 
 'Ist das Rehkitz nicht süß?');
 
 INSERT INTO projects(project_name, project_picture_url, about)
-VALUES ('Eichhörnchen greift beim Trinken', '/media/Eichhörnchen2.JPG', 
-'Viele Eichhörnchen halten die Flasche beim Trinken fest.');
+VALUES ('Kleines Eichhörnchenbaby', '/media/Eichhörnchen3/Eichhörnchen3.jpg', 
+'Sehr junges Eichhörnchenbaby, nur wenige Tage alt.');
 
 INSERT INTO projects(project_name, project_picture_url, about)
-VALUES ('Eichhörnchen beim Trinken', '/media/Eichhörnchen3.JPG' , 
-'Jedes Eichhörnchen trinkt ein bisschen anders.');
-
-INSERT INTO projects(project_name, project_picture_url, about)
-VALUES ('Fred & Frieda 4', '/media/Waschbär6.jpg', 
+VALUES ('Fred & Frieda', '/media/Waschbär3/Waschbär3.jpg', 
 'Das kitzelt ganz schön :-)');
 
 INSERT INTO projects(project_name, project_picture_url, about)
-VALUES ('Eichhörnchen in der Tasse', '/media/Eichhörnchen4.JPG', 
+VALUES ('Eichhörnchen in der Tasse', '/media/Eichhörnchen2/Eichhörnchen2.JPG', 
 'Nanu? Eigentlich wollte ich ja einen Kaffee trinken...');
 
 INSERT INTO projects(project_name, project_picture_url, about)
-VALUES ('Eichhörnchen schläft', '/media/Eichhörnchen6.jpg', 
+VALUES ('Eichhörnchen schläft', '/media/Eichhörnchen4/Eichhörnchen4.jpg', 
 'Eichhörnchenkinder machen es sich gerne bei ihren Zieheltern gemütlich.');
 
