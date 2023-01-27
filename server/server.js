@@ -13,10 +13,11 @@ app.get("/api/allProjects", async (request, response) => {
     response.json(allProjects);
 });
 app.get("/api/project/:id", (request, response) => {
-    getProjectDataById(request.params.id).then((result) =>
-        response.json(result)
-    );
-    /* .then((data) => console.log(data)); */
+    getProjectDataById(request.params.id).then((result) => {
+        response.json(result);
+        console.log(Array.isArray(result.gallery_pictures));
+        console.log(result.gallery_pictures[0]);
+    });
 });
 
 app.get("*", function (req, res) {

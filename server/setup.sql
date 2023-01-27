@@ -6,14 +6,14 @@ CREATE TABLE projects (
     project_picture_url TEXT NOT NULL,
      /* tags TEXT[], */
     about TEXT NOT NULL,
-    more_pictures TEXT[],
+    gallery_pictures VARCHAR[],
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
 
-INSERT INTO projects(project_name, project_picture_url, about)
+INSERT INTO projects(project_name, project_picture_url, about, gallery_pictures)
 VALUES ('Marie, das Damwildbaby', '/media/Andere1/Andere1.JPG', 
-'Tatsächlich handelt es sich hier um ein Hirschbaby!');
+'Tatsächlich handelt es sich hier um ein Hirschbaby!', ARRAY ['/media/Andere1/Marie1.JPG', '/media/Andere1/Marie2.JPG', '/media/Andere1/Marie3.jpg', '/media/Andere1/Marie4.jpg', '/media/Andere1/Marie5.jpg', '/media/Andere1/Marie6.jpg', '/media/Andere1/Marie7.jpg']);
 
 
 INSERT INTO projects(project_name, project_picture_url, about)

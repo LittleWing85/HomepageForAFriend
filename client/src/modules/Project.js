@@ -10,7 +10,9 @@ export default function Project() {
     useEffect(() => {
         fetch("/api/project/" + projectId)
             .then((response) => response.json())
-            .then((data) => setProject(data));
+            .then((data) => {
+                setProject(data);
+            });
     }, [projectId]);
 
     function closeProject() {
@@ -30,9 +32,9 @@ export default function Project() {
                 />
                 <p className="about">{project.about}</p>
             </div>
-            {/* <p>{project.more_pictures}</p> */}
-            {/*             <ul>
-                {project.more_pictures.map((url) => (
+            <p>{project.gallery_pictures}</p>
+            {/* <ul>
+                {project.gallery_pictures.map((url) => (
                     <li className="noListStyle" key={url}>
                         <img className="portfolioImage" src={url} />
                     </li>
