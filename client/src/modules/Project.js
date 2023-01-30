@@ -20,26 +20,36 @@ export default function Project() {
     }
 
     return (
-        <div className="content">
-            <div className="closingButtonContainer" onClick={closeProject}>
-                <p className="closingButton">&#10799;</p>
-            </div>
-            <h1>{project.project_name}</h1>{" "}
-            <div className="gridProject">
-                <img
-                    className="mainImageProject"
-                    src={project.project_picture_url}
-                />
-                <p className="about">{project.about}</p>
-            </div>
-            <p>{project.gallery_pictures}</p>
-            {/* <ul>
-                {project.gallery_pictures.map((url) => (
-                    <li className="noListStyle" key={url}>
-                        <img className="portfolioImage" src={url} />
-                    </li>
-                ))}
-            </ul> */}
+        <div>
+            {!project.gallery_pictures ? (
+                <>Loading...</>
+            ) : project.gallery_pictures ? (
+                <>
+                    <div className="content">
+                        <div
+                            className="closingButtonContainer"
+                            onClick={closeProject}
+                        >
+                            <p className="closingButton">&#10799;</p>
+                        </div>
+                        <h1>{project.project_name}</h1>{" "}
+                        <div className="gridProject">
+                            <img
+                                className="mainImageProject"
+                                src={project.project_picture_url}
+                            />
+                            <p className="about">{project.about}</p>
+                        </div>
+                        <ul>
+                            {project.gallery_pictures.map((url) => (
+                                <li className="noListStyle" key={url}>
+                                    <img className="portfolioImage" src={url} />
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                </>
+            ) : null}
         </div>
     );
 }
