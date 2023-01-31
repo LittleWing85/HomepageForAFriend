@@ -35,7 +35,10 @@ p {
     flex-wrap: wrap;
 }
 .content {
-    margin: 2rem 40% 2rem 2rem;
+    margin: 2rem;
+}
+.noListStyle {
+    list-style-type: none;
 }
 
 /* Rulesets for header*/
@@ -65,9 +68,6 @@ p {
 .wrapper {
     display: flex;
     flex-wrap: wrap;
-}
-.noListStyle {
-    list-style-type: none;
 }
 .portfolioCard {
     position: relative;
@@ -99,20 +99,6 @@ p {
 }
 
 /* Rulesets for project details*/
-.gridProject {
-    display: grid;
-    grid-template-columns: 60% 40%;
-    grid-template-rows: 100%;
-}
-.mainImageProject {
-    margin: 1rem 2rem 2rem 0;
-    max-width: 100%;
-}
-.about {
-    margin: 1rem 2rem 2rem 2rem;
-    line-height: 1.3rem;
-    text-align: left;
-}
 .closingButtonContainer {
     display: flex;
     position: absolute;
@@ -132,6 +118,24 @@ p {
 }
 .closingButtonContainer:hover {
     cursor: pointer;
+}
+.projectImagesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.mainImageProject {
+    margin-top: 1rem;
+    max-width: 70%;
+}
+.mainImageProject,
+.additionalImage {
+    max-height: 60vh;
+}
+.about {
+    margin-top: 1rem;
+    line-height: 1.3rem;
+    text-align: left;
 }
 
 /* Media Queries */

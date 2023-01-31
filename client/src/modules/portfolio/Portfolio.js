@@ -30,7 +30,6 @@ export default function PortfolioWithRedux() {
                 {allProjects.map((project) => (
                     <li
                         className="noListStyle portfolioCard"
-                        name={"Hello"}
                         key={project.id}
                         onClick={() => displayProjectInfo(project.id)}
                     >

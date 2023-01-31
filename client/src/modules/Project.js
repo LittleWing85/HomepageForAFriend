@@ -10,9 +10,7 @@ export default function Project() {
     useEffect(() => {
         fetch("/api/project/" + projectId)
             .then((response) => response.json())
-            .then((data) => {
-                setProject(data);
-            });
+            .then((data) => setProject(data));
     }, [projectId]);
 
     function closeProject() {
@@ -20,34 +18,37 @@ export default function Project() {
     }
 
     return (
-        <div>
+        <div className="content">
             {!project.gallery_pictures ? (
                 <>Loading...</>
             ) : project.gallery_pictures ? (
                 <>
-                    <div className="content">
-                        <div
-                            className="closingButtonContainer"
-                            onClick={closeProject}
-                        >
-                            <p className="closingButton">&#10799;</p>
-                        </div>
-                        <h1>{project.project_name}</h1>{" "}
-                        <div className="gridProject">
-                            <img
-                                className="mainImageProject"
-                                src={project.project_picture_url}
-                            />
-                            <p className="about">{project.about}</p>
-                        </div>
-                        <ul>
-                            {project.gallery_pictures.map((url) => (
+                    <div
+                        className="closingButtonContainer"
+                        onClick={closeProject}
+                    >
+                        <p className="closingButton">&#10799;</p>
+                    </div>
+                    <h1>{project.project_name}</h1>{" "}
+                    <div className="projectImagesContainer">
+                        <img
+                            className="mainImageProject"
+                            src={project.gallery_pictures[0]}
+                        />
+                        <p className="about">{project.about}</p>
+                    </div>
+                    <ul className="projectImagesContainer">
+                        {project.gallery_pictures
+                            .splice(1, project.gallery_pictures.length)
+                            .map((url) => (
                                 <li className="noListStyle" key={url}>
-                                    <img className="portfolioImage" src={url} />
+                                    <img
+                                        className="additionalImage"
+                                        src={url}
+                                    />
                                 </li>
                             ))}
-                        </ul>
-                    </div>
+                    </ul>
                 </>
             ) : null}
         </div>
